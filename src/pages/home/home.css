@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+.home{
+	display: flex;
+	flex: 2;	
+	justify-content: flex-start;
+	flex-direction: column;
+	margin: 50px 72px;
+}
+.home .top-content{
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.home .top-content .content-image{
+	width: 380px;
+	height: 460px;
+	border-radius: 30px;
+	margin: 40px;
+	object-fit: cover;
+	-webkit-box-shadow: 3px 4px 20px 4px rgba(237,108,2,0.5); 
+	box-shadow: 3px 4px 20px 4px rgba(237,108,2,0.5);
+	background: #ECEFCF;
+}
+.home .top-content .content-title{
+	display: flex;
+	flex-direction: column;
+	margin-top: 80px;
+}
+.home .top-content .content-title .title-top{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	padding: 20px;
+	height: 75%;
+}
+.home .top-content .content-title .title-top h3{
+	text-transform: uppercase;
+	font-family: 'Abril Fatface', 'cursive';
+	font-weight: 400;
+	font-size: 2rem;
+	text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+	margin: 10px 0;
+}
+.home .top-content .content-title .title-top h1{
+	background-image: url('https://image.shutterstock.com/image-illustration/dripping-blood-isolated-on-white-600w-1299151291.jpg');
+	font-family: 'Linotext',sans-serif;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	color: transparent;
+	font-weight: 800;
+	font-size: 4rem;
+}
+.home .top-content .content-title .title-top h4{
+	font-weight: normal;
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 2rem;
+	text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
+}
+.home .top-content .content-title .title-bottom{
+	display: flex;
+	justify-content: flex-start;
+	
+}
+.home .top-content .content-title .title-bottom .content-btn{
+	margin: 30px 0 0 20px;
+	width: 180px;
+	height: 64px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	background: #ed6c02;
+	color: #fff;
+	padding: 15px;
+	align-items: center;
+}
+.home .top-content .content-title .title-bottom .content-btn:hover{
+	background-color: #FF7700;
+}
+.home .top-content .content-title .title-bottom .content-btn .playIcon{
+	transform: translateY(3px) scale(1.5);
+}
+.home .top-content .content-title .title-bottom .content-btn span{
+	font-family: 'Poppins',sans-serif;
+	font-weight: 500;
+	font-size: 22px;
+	text-align: end;
+	margin: 5px;
+
+}

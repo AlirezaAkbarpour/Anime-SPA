@@ -1,0 +1,72 @@
+.header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	width:calc(100%-20px); 
+	height: 80px;
+	flex: 2;
+	padding: 10px 10px;
+	background: linear-gradient(to bottom, rgba(0,0,0,.99),transparent)!important;
+	animation: .7s cubic-bezier(0.6, 0.04, 0.98, 0.335) load;
+}
+.header a{
+	cursor: pointer;
+	text-decoration: none;
+	color: unset;
+}
+.header .header-left{
+	display: flex;
+	flex: 1.2;
+	justify-content: space-around;
+}
+.header .header-left .header-title{
+	font-weight:600 ;
+	color: #fff;	
+	font-family: 2rem;
+}
+.header .header-left .header-link a{
+	margin: 15px;
+	padding: 2px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+	line-height:  2rem ;
+}
+.header .header-left .header-link a:not(:first-child):hover {
+	border-bottom: solid 3px #ffa500;
+}
+.header .header-left .header-link a .active{
+	border-bottom: solid 3px #ffa500;
+}
+.header .header-right{
+	flex:.8 ;
+	display: flex;
+	justify-content: flex-end;
+}
+.header .header-right .header-right-item{
+	margin: 15px 15px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.header .header-right .header-right-item span{
+	color: #c7c7c7;
+	font-size: 16px;
+	text-align: center;
+}
+.header .header-right .header-right-item button{
+	width: 100px;
+	height: 40px;
+	background: #ed6c02;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 400;
+	padding: 10px;
+	font-size: medium;
+	font-family: 'Roboto',sans-serif;
+	text-align: center;
+	border-radius: 5px;
+}
+.header .header-right .header-right-item button:hover{
+	background: #E1701A;
+}
