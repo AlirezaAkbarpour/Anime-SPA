@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+body{
+	overflow: hidden;
+	zoom: 0.9;
+}
 .home{
 	display: flex;
 	flex: 2;	
@@ -14,8 +18,8 @@
 	align-items: flex-start;
 }
 .home .top-content .content-image{
-	width: 380px;
-	height: 460px;
+	width: 280px;
+	height: 360px;
 	border-radius: 30px;
 	margin: 40px;
 	object-fit: cover;
@@ -32,31 +36,34 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	color: #fff;
 	padding: 20px;
 	height: 75%;
 }
 .home .top-content .content-title .title-top h3{
 	text-transform: uppercase;
-	font-family: 'Abril Fatface', 'cursive';
-	font-weight: 400;
+	font-family: 'Abril Fatface', 'cursive',sans-serif;
+	font-weight: 100;
 	font-size: 2rem;
+	color: #fff;
 	text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
 	margin: 10px 0;
 }
 .home .top-content .content-title .title-top h1{
-	background-image: url('https://image.shutterstock.com/image-illustration/dripping-blood-isolated-on-white-600w-1299151291.jpg');
+	background-image: url('/src/images/txt_bg.webp');
 	font-family: 'Linotext',sans-serif;
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	color: transparent;
 	font-weight: 800;
 	font-size: 4rem;
+	-webkit-filter: drop-shadow(-8px -5px rgba(0,0,0,1));
+	filter: drop-shadow(-8px -5px rgba(0,0,0,1));
 }
 .home .top-content .content-title .title-top h4{
 	font-weight: normal;
 	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 2rem;
+	font-size: 1.2rem;
+	color: #fff;
 	text-shadow: 2px 2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, -2px -2px 0 #000, 2px 0px 0 #000, 0px 2px 0 #000, -2px 0px 0 #000, 0px -2px 0 #000;
 }
 .home .top-content .content-title .title-bottom{
@@ -66,14 +73,14 @@
 }
 .home .top-content .content-title .title-bottom .content-btn{
 	margin: 30px 0 0 20px;
-	width: 180px;
-	height: 64px;
+	width: 184px;
+	height: 52px;
 	border-radius: 30px;
 	border: none;
 	cursor: pointer;
 	background: #ed6c02;
 	color: #fff;
-	padding: 15px;
+	padding: -5px;
 	align-items: center;
 }
 .home .top-content .content-title .title-bottom .content-btn:hover{
@@ -84,9 +91,34 @@
 }
 .home .top-content .content-title .title-bottom .content-btn span{
 	font-family: 'Poppins',sans-serif;
-	font-weight: 500;
-	font-size: 22px;
+	font-weight: 400;
+	font-size: 20px;
 	text-align: end;
 	margin: 5px;
 
+}
+
+.home .album{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.home .album .imgrow{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding:0 0 0 20px;
+}
+.home .album .imgrow .img−horizontal{
+	object-fit:cover;
+	border-radius: 15px;
+}
+.home .album .imgrow .img−vertical{
+	object-fit: cover;
+	border-radius: 15px;
+	transform: translateX(-20px);
+	-webkit-box-shadow: 3px 4px 20px 4px rgba(237,108,2,0.5); 
+	box-shadow: 3px 4px 20px 4px rgba(237,108,2,0.5);
 }

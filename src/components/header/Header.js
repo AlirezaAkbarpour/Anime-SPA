@@ -19,7 +19,7 @@ export default function Header() {
 	</div>
 	<div className='header-right'>
 		<div className='header-right-item'>
-			<Badge color='warning' badgeContent={''}>
+			<Badge>
 				<NotificationsNoneOutlinedIcon/>
 			</Badge>
 		</div>
